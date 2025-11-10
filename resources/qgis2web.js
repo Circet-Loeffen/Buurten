@@ -9,7 +9,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([516210.339157, 6812416.615039, 517426.107833, 6813081.129819], map.getSize());
+map.getView().fit([515808.824175, 6812089.462978, 518240.330661, 6813418.431877], map.getSize());
 
 //full zooms only
 map.getView().setProperties({constrainResolution: true});
@@ -125,7 +125,7 @@ var featureOverlay = new ol.layer.Vector({
 });
 
 var doHighlight = false;
-var doHover = true;
+var doHover = false;
 
 function createPopupField(currentFeature, currentFeatureKeys, layer) {
     var popupText = '';
@@ -1010,18 +1010,6 @@ let measuring = false;
 
 //layer search
 
-var searchLayer = new SearchLayer({
-    layer: lyr_Buurten2024_4,
-    colName: 'buurtnaam2',
-    zoom: 10,
-    collapsed: true,
-    map: map,
-    maxResults: 10,
-});
-map.addControl(searchLayer);
-document.getElementsByClassName('search-layer')[0].getElementsByTagName('button')[0].className += ' fa fa-binoculars';
-document.getElementsByClassName('search-layer-input-search')[0].placeholder = 'Search feature ...';
-    
 
 //scalebar
 
