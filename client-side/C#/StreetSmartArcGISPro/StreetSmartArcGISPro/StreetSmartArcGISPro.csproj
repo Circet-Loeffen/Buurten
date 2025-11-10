@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<RuntimeIdentifier>win10-x64</RuntimeIdentifier>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<NoWarn>CA1416</NoWarn>
+		<UseWPF>true</UseWPF>
+		<SignAssembly>False</SignAssembly>
+		<OutputType>Library</OutputType>
+		<Platforms>AnyCPU;x64</Platforms>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<PlatformTarget>x64</PlatformTarget>
+		<Optimize>False</Optimize>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<PlatformTarget>x64</PlatformTarget>
+		<Optimize>True</Optimize>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<PlatformTarget>x64</PlatformTarget>
+		<Optimize>False</Optimize>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<PlatformTarget>x64</PlatformTarget>
+		<Optimize>True</Optimize>
+	</PropertyGroup>
+	<ItemGroup>
+		<Content Include="Config.fr.daml" />
+		<Content Include="Config.daml" />
+		<Content Include="Images\StreetSmartArcGISPro32.png" />
+		<Content Include="Images\CycloMediaOptions32.png" />
+		<Content Include="Images\RecordingLayer32.png" />
+		<Content Include="Images\StreetSmart32.png" />
+		<Content Include="Images\OpenLocation32.png" />
+		<Content Include="Images\ImageIdSearch32.png" />
+		<Content Include="Images\MeasurementDetail32.png" />
+		<Content Include="Images\OverlaysSync.png" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="..\..\Doc\LGPL-3.0.txt" Link="LGPL-3.0.txt" />
+		<Content Include="..\..\Doc\Release notes.txt" Link="Release notes.txt" />
+		<Content Include="..\..\Doc\ToDo.txt" Link="ToDo.txt" />
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="Resources\Agreement.txt" />
+		<EmbeddedResource Include="Resources\APIKey.xml" />
+		<EmbeddedResource Include="Resources\Languages.xml" />
+		<EmbeddedResource Include="Images\UserTrash16.png" />
+		<EmbeddedResource Include="Images\FocusMode16.png" />
+		<EmbeddedResource Include="Images\SystemSearch16.png" />
+		<EmbeddedResource Include="Images\OpenLocation.cur" />
+		<EmbeddedResource Include="Resources\Recordings\FCRecordings.dbf" />
+		<EmbeddedResource Include="Resources\Recordings\FCRecordings.shp" />
+		<EmbeddedResource Include="Resources\Recordings\FCRecordings.shx" />
+		<EmbeddedResource Include="..\..\Doc\Street Smart for ArcGIS Pro User Manual.pdf" Link="Resources\Street Smart for ArcGIS Pro User Manual.pdf" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="StreetSmartArcGISPro.csproj.DotSettings" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Esri.ArcGISPro.Extensions30" Version="3.0.0.36056" />
+		<PackageReference Include="Nancy" Version="2.0.0" />
+		<PackageReference Include="Sentry" Version="4.10.2" />
+		<PackageReference Include="StreetSmart.WPF" Version="24.12.0.4" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.2" />
+		<PackageReference Include="System.Windows.Extensions" Version="8.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Update="Properties\Resources.fr.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.fr.resx</DependentUpon>
+		</Compile>
+		<Compile Update="Properties\Resources.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+	<Target Name="CopyLocalesInArcGisProAddInX" BeforeTargets="PackageArcGISContents">
+		<Error Condition="!Exists('$(TargetDir)locales')" Text="Expected CefSharp locales folder is missing." /> 
+		<ItemGroup>
+			<!-- this is WORKAROUND for having CefSharp .pak files delivered properly to the AddInX package -->
+			<!-- this target is needed to ensure CefSharp runtime pak files are restored properly (even in other applications using .NET API nuget package) -->
+			<LocalesSourceFiles Include="$(TargetDir)locales\*.*" />
+		</ItemGroup>
+		<Copy SourceFiles="@(LocalesSourceFiles)" DestinationFolder="$(IntermediateOutputPath)temp_archive\Install\locales" />
+	</Target>
+</Project>
