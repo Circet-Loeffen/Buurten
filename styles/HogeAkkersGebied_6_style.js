@@ -4,121 +4,145 @@ function categories_HogeAkkersGebied_6(feature, value, size, resolution, labelTe
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement) {
                 var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
-                switch(valueStr) {case '-2147438352':
+                switch(valueStr) {case '156.517':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(222,70,148,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        stroke: new ol.style.Stroke({color: 'rgba(176,120,211,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case '-2124461702':
+case '156.531':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(203,116,235,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        stroke: new ol.style.Stroke({color: 'rgba(55,113,229,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case '-1989136224':
+case '156.684':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(124,126,218,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        stroke: new ol.style.Stroke({color: 'rgba(172,226,110,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case '-1983885235':
+case '156.723':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(219,40,66,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        stroke: new ol.style.Stroke({color: 'rgba(231,213,123,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case '-1953312688':
+case '156.724':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(140,202,32,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        stroke: new ol.style.Stroke({color: 'rgba(209,97,145,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case '-1931252727':
+case 'Nieuw 01':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(155,116,227,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        stroke: new ol.style.Stroke({color: 'rgba(216,235,108,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case '1207959296':
+case 'Nieuw 02':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(39,227,202,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        stroke: new ol.style.Stroke({color: 'rgba(202,66,168,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case '1528882475':
+case 'Nieuw 03':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(57,227,139,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        stroke: new ol.style.Stroke({color: 'rgba(225,53,15,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case '1659895808':
+case 'Nieuw 04':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(211,116,201,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        stroke: new ol.style.Stroke({color: 'rgba(67,197,201,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case '1761591296':
+case 'Nieuw 05':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(111,212,123,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        stroke: new ol.style.Stroke({color: 'rgba(117,192,232,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case '1838630918':
+case 'Nieuw 06':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(15,98,232,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        stroke: new ol.style.Stroke({color: 'rgba(115,221,86,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case '2048341597':
+case 'Nieuw 07':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(235,232,84,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        stroke: new ol.style.Stroke({color: 'rgba(237,161,85,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case '2090043731':
+case 'Nieuw 08':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(107,187,211,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        stroke: new ol.style.Stroke({color: 'rgba(118,120,232,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case '2090153780':
+case 'Nieuw 09':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(124,222,88,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        stroke: new ol.style.Stroke({color: 'rgba(40,219,115,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case '2109718463':
+case 'Nieuw 10':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(230,174,85,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        stroke: new ol.style.Stroke({color: 'rgba(74,234,90,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case 'Nieuw 11':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(155,127,221,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case 'Nieuw 12':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(215,84,224,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case 'Nieuw 13':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(223,26,52,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -132,7 +156,7 @@ var style_HogeAkkersGebied_6 = function(feature, resolution){
     };
     
     var labelText = ""; 
-    var value = feature.get("MapFillColo");
+    var value = feature.get("Label");
     var labelFont = "10px, sans-serif";
     var labelFill = "#000000";
     var bufferColor = "";

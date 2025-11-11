@@ -91,7 +91,7 @@ var lyr_HogeAkkersStationLS_5 = new ol.layer.Vector({
                 source:jsonSource_HogeAkkersStationLS_5, 
                 style: style_HogeAkkersStationLS_5,
                 popuplayertitle: 'Hoge Akkers - Station LS',
-                interactive: true,
+                interactive: false,
     title: 'Hoge Akkers - Station LS<br />\
     <img src="styles/legend/HogeAkkersStationLS_5_0.png" /> Alternatieve Locatie<br />\
     <img src="styles/legend/HogeAkkersStationLS_5_1.png" /> Bestaand<br />\
@@ -110,23 +110,26 @@ var lyr_HogeAkkersGebied_6 = new ol.layer.Vector({
                 source:jsonSource_HogeAkkersGebied_6, 
                 style: style_HogeAkkersGebied_6,
                 popuplayertitle: 'Hoge Akkers - Gebied',
-                interactive: true,
+                interactive: false,
     title: 'Hoge Akkers - Gebied<br />\
-    <img src="styles/legend/HogeAkkersGebied_6_0.png" /> -2147438352<br />\
-    <img src="styles/legend/HogeAkkersGebied_6_1.png" /> -2124461702<br />\
-    <img src="styles/legend/HogeAkkersGebied_6_2.png" /> -1989136224<br />\
-    <img src="styles/legend/HogeAkkersGebied_6_3.png" /> -1983885235<br />\
-    <img src="styles/legend/HogeAkkersGebied_6_4.png" /> -1953312688<br />\
-    <img src="styles/legend/HogeAkkersGebied_6_5.png" /> -1931252727<br />\
-    <img src="styles/legend/HogeAkkersGebied_6_6.png" /> 1207959296<br />\
-    <img src="styles/legend/HogeAkkersGebied_6_7.png" /> 1528882475<br />\
-    <img src="styles/legend/HogeAkkersGebied_6_8.png" /> 1659895808<br />\
-    <img src="styles/legend/HogeAkkersGebied_6_9.png" /> 1761591296<br />\
-    <img src="styles/legend/HogeAkkersGebied_6_10.png" /> 1838630918<br />\
-    <img src="styles/legend/HogeAkkersGebied_6_11.png" /> 2048341597<br />\
-    <img src="styles/legend/HogeAkkersGebied_6_12.png" /> 2090043731<br />\
-    <img src="styles/legend/HogeAkkersGebied_6_13.png" /> 2090153780<br />\
-    <img src="styles/legend/HogeAkkersGebied_6_14.png" /> 2109718463<br />' });
+    <img src="styles/legend/HogeAkkersGebied_6_0.png" /> 156.517<br />\
+    <img src="styles/legend/HogeAkkersGebied_6_1.png" /> 156.531<br />\
+    <img src="styles/legend/HogeAkkersGebied_6_2.png" /> 156.684<br />\
+    <img src="styles/legend/HogeAkkersGebied_6_3.png" /> 156.723<br />\
+    <img src="styles/legend/HogeAkkersGebied_6_4.png" /> 156.724<br />\
+    <img src="styles/legend/HogeAkkersGebied_6_5.png" /> Nieuw 01<br />\
+    <img src="styles/legend/HogeAkkersGebied_6_6.png" /> Nieuw 02<br />\
+    <img src="styles/legend/HogeAkkersGebied_6_7.png" /> Nieuw 03<br />\
+    <img src="styles/legend/HogeAkkersGebied_6_8.png" /> Nieuw 04<br />\
+    <img src="styles/legend/HogeAkkersGebied_6_9.png" /> Nieuw 05<br />\
+    <img src="styles/legend/HogeAkkersGebied_6_10.png" /> Nieuw 06<br />\
+    <img src="styles/legend/HogeAkkersGebied_6_11.png" /> Nieuw 07<br />\
+    <img src="styles/legend/HogeAkkersGebied_6_12.png" /> Nieuw 08<br />\
+    <img src="styles/legend/HogeAkkersGebied_6_13.png" /> Nieuw 09<br />\
+    <img src="styles/legend/HogeAkkersGebied_6_14.png" /> Nieuw 10<br />\
+    <img src="styles/legend/HogeAkkersGebied_6_15.png" /> Nieuw 11<br />\
+    <img src="styles/legend/HogeAkkersGebied_6_16.png" /> Nieuw 12<br />\
+    <img src="styles/legend/HogeAkkersGebied_6_17.png" /> Nieuw 13<br />' });
 var format_Msgeul_7 = new ol.format.GeoJSON();
 var features_Msgeul_7 = format_Msgeul_7.readFeatures(json_Msgeul_7, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -192,7 +195,7 @@ lyr_LSgeul_8.set('fieldImages', {'fid': 'TextEdit', 'Buurtnumme': 'TextEdit', 'D
 lyr_AVP_9.set('fieldImages', {'fid': 'TextEdit', 'Stationsnu': 'TextEdit', 'Actie MSR': 'TextEdit', 'Opmerking': 'TextEdit', 'X': 'TextEdit', 'Y': 'TextEdit', });
 lyr_Buurten2024_4.set('fieldLabels', {'Buurtnaam': 'header label - visible with data', 'Verantwoordelijke': 'header label - always visible', 'Fase': 'header label - always visible', 'Aantal aansluitingen': 'header label - always visible', 'Aantal MSR': 'header label - always visible', });
 lyr_HogeAkkersStationLS_5.set('fieldLabels', {'ID': 'hidden field', 'Nummer': 'header label - always visible', 'Status': 'header label - always visible', 'Adres': 'header label - always visible', 'Ontwerpstro': 'header label - always visible', });
-lyr_HogeAkkersGebied_6.set('fieldLabels', {'ID': 'hidden field', 'GebiedLabel': 'header label - always visible', 'Handle': 'hidden field', 'Label': 'header label - always visible', 'MapFillColo': 'no label', });
+lyr_HogeAkkersGebied_6.set('fieldLabels', {'ID': 'hidden field', 'GebiedLabel': 'header label - always visible', 'Handle': 'hidden field', 'Label': 'header label - always visible', 'MapFillColo': 'hidden field', });
 lyr_Msgeul_7.set('fieldLabels', {'fid': 'no label', 'Lengte': 'no label', 'Buurtnumme': 'no label', 'Discipline': 'no label', });
 lyr_LSgeul_8.set('fieldLabels', {'fid': 'no label', 'Buurtnumme': 'no label', 'Discipline': 'no label', 'Lengte': 'no label', });
 lyr_AVP_9.set('fieldLabels', {'fid': 'hidden field', 'Stationsnu': 'header label - always visible', 'Actie MSR': 'header label - always visible', 'Opmerking': 'header label - always visible', 'X': 'hidden field', 'Y': 'hidden field', });
